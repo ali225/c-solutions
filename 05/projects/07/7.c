@@ -14,11 +14,10 @@ int main(void) {
         max1 = n2;
         min1 = n1;
     }
-    
     if (n3 >= n4) {
         max2 = n3;
         min2 = n4;
-    } else {
+    }else {
         max2 = n4;
         min2 = n3;
     }
