@@ -2,7 +2,7 @@
 
 int main(void) {
 
-    float largest = 0.0f;
+    float largest   = 0.0f;
     float current;
 
     do {
