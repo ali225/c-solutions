@@ -9,11 +9,11 @@ int main(void) {
 
     printf("Digits reversed: ");
 
-    do {
+    while (n != 0)
+    {
         printf("%d", n % 10);
         n /= 10;
-    } while (n != 0);
-
+    }
     printf("\n");
 
     return 0;
