@@ -14,7 +14,7 @@ int main(void) {
 
     printf("In reverse order:");
     for (i = SIZE - 1; i >= 0; i--)
-        printf(" %d", a[i]);
+        printf(" %d\n", a[i]);
     printf("\n");
 
     return 0;
