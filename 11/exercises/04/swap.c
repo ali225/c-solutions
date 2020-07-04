@@ -12,6 +12,7 @@ int main()
     printf("the x =%d and y=%d \n", x, y);
 
 }
+/* the sawp functaion  */
 void swap(int *p, int *d)
 {
     int temp = *p;
