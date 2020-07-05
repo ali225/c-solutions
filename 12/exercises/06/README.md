@@ -1,4 +1,5 @@
 ### Exercise 12.06
+
 Rewrite the following function to use pointer arithmetic instead of array
 subscripting. (In other words, elimate the variable `i` and all uses of the `[]`
 operator.) Make as few changes as possible.
@@ -29,3 +30,4 @@ int sum_array(const int a[], int n) {
     }
     returm sum;
 }
+```
