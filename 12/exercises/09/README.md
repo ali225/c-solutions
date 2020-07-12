@@ -1,4 +1,5 @@
 ### Exercise 12.09
+
 Write the following function:
 
 ```c
@@ -13,8 +14,8 @@ not subscripting -- to visit array elements.
 
 ```c
 double inner_product(const double *a, const double *b, int n) {
-
     double sum;
+
     int i = 0;
 
     while (i++ < n)

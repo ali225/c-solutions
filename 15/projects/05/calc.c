@@ -4,8 +4,8 @@
 #include <stdbool.h> /* C99+ only */
 #include "stack.h"
 
-int main(void) {
-
+int main(void) 
+{
     char c, op1, op2;
 
     while(true) {

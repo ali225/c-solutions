@@ -24,8 +24,8 @@ int main(void) {
     return 0;
 }
 
-void get_first_word(void) {
-
+void get_first_word(void) 
+{
     get_word();
     strcpy(smallest_word, word);
     strcpy(largest_word, word);
