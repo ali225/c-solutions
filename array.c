@@ -3,7 +3,7 @@
 
 int sum(int a[] , int n);
 int max(int b[] , int n);
-
+ 
 void main(void)
 {
    int day[MAXSIZE]={34,5,65,76,7};
