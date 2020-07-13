@@ -1,7 +1,9 @@
 #include <stdio.h>
 #define SIZE 5
+
 int sum_arr(int a[], int n);
 int max_arr(int b[], int n);
+
 void main(void) {
 
   int data[SIZE];
