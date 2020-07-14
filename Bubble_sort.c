@@ -42,7 +42,7 @@ void main(void)
     printf("value[%d] of array=%d \n",i,data[i]);
    }
 } */
-#include <stdio.h>
+/* #include <stdio.h>
 #include <string.h>
 #include <math.h>
 #include <stdlib.h>
@@ -54,7 +54,6 @@ int main() {
                          "five", "six", "seven", "eight", "nine"};
   scanf("%d\n%d", &a, &b);
   for (int i = a; i <= b; i++) {
-
     if (i > 9) {
       if (i % 2 == 0) {
         printf("even\n");
@@ -66,4 +65,50 @@ int main() {
     }
   }
   return 0;
+} */
+
+#include <stdio.h>
+#define Z 10
+#define TRUE 1
+#define FALSE 0
+void main(void) {
+  int data[Z];
+  int i, n, sorted;
+
+  printf("Enter size array :");
+  scanf("%d", &n);
+
+  for (i = 0; i < n; i++) {
+    printf("Value[%d] of Array = ", i);
+    scanf("%d", &data[i]);
+  }
+  printf("=====================\n");
+  printf("Befor that of array ");
+  printf("=====================\n");
+
+  for (i = 0; i < n; i++) {
+    printf("Value[%d] of Array = %d\n", i, data[i]);
+  }
+
+  do {
+    sorted = TRUE;
+    for (i = 0; i < n - 1; i++) {
+      if (data[i] > data[i + 1]) {
+        int temp;
+        temp = data[i];
+        data[i] = data[i + 1];
+        data[i + 1] = temp;
+        sorted = FALSE;
+      }
+    }
+
+  } while (!sorted);
+
+  printf("=====================\n");
+  printf("After  that of array ");
+  printf("=====================\n");
+
+  for (i = 0; i < n; i++) {
+    printf("Value[%d] of Array = %d\n", i, data[i]);
+  }
 }
