@@ -1,30 +1,30 @@
 #include <stdio.h>
-#define size 20
+#define Z 6
 void main(void) {
-  int data[size];
-  int i, n, key, pos;
+  int data[Z];
+  int i, pos, n, key;
 
-  printf("please Enter size of array : ");
+  printf("Enter the Size of array : ");
   scanf("%d", &n);
-
   for (i = 0; i < n; i++) {
-    printf("Enter value[%d] of array :", i);
+    printf("please enter value [%d] : ", i);
     scanf("%d", &data[i]);
   }
-
-  printf("pleas enter key :");
+  printf("====================\n");
+  printf("Enter search Key :");
   scanf("%d", &key);
-
+  printf("====================\n");
   pos = -1;
-  /*algorthem search liner of array */
-
-  for (i = 0; i < n; i++)
+  for (i = 0; i < n; i++) {
     if (key == data[i]) {
       pos = data[i];
       break;
     }
-  if (pos != -1)
-    printf("The Key is located = %d", pos);
-  else
-    printf("the key is not located = %d", key);
+  }
+  if (pos != -1) {
+    printf("the value of key that : %d", pos);
+  } else {
+
+    printf("the value of not that : %d", key);
+  }
 }
