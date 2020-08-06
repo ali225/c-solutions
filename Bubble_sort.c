@@ -15,8 +15,8 @@ void main(void)
    {
     printf("value[%d] of array=%d \n",i,data[i]);
    }
-
-     /*algorthem selction sort using bubble sort*/
+*/
+// algorthem selction sort using bubble sort
 /*
      do
      {  sorted = TRUE;
