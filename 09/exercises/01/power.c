@@ -1,12 +1,11 @@
 #include <stdio.h>
 
-int power(int a, int x);
+int power(int x, int n);
+
 int main(void) {
   int p;
-  printf("enter pleas number of power \n");
+  printf("The power of that ");
   p = power(5, 3);
-  printf("the fact = %d", p);
-  return 0;
+  printf("the is : %d", p);
 }
-
-int power(int a, int x) { return x == 0 ? 1 : a * power(a, x - 1); }
+int power(int x, int n) { return n == 0 ? 1 : x * power(x, n - 1); }
