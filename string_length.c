@@ -1,21 +1,25 @@
 #include <stdio.h>
-int stringlength(char *string);
 
-int main() {
+int string_length(char *name);
 
-  char *name = "Eng Ali Gamal Aziz";
+int main(void)
+{
+    char * name = "Hello My name Ali Gamal ";
 
-  printf("the length word %d", stringlength(name));
+    printf("the length os %d", string_length(name));
 
-  return 0;
+    return 0;
 }
 
-int stringlength(char *string) {
-  int x = 0;
 
-  while (*string != '\0') {
-    x++;
-    string++;
-  }
-  return x;
+int string_length(char *name){
+
+    int x = 0; 
+
+    while(*name !='\0'){
+      x++;
+      name++;
+    }
+
+    return x;
 }
