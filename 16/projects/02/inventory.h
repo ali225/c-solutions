@@ -10,4 +10,8 @@ struct part {
     int on_hand;
 } inventory[MAX_PARTS];
 
+void quicksort(struct part a[], int low, int high);
+int split(struct part a[], int low, int high);
+int read_line(char str[], int n);
+
 #endif
