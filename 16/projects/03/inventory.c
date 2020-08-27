@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "inventory.h"
-#include "readline.h"
-#include "quicksort.h"
+#include <ctype.h> /* isspace */
+
 
 int find_part(const struct part inventory[], int num_parts, int number);
 void insert(struct part inventory[], int *num_parts);
@@ -133,3 +133,48 @@ void print(struct part inventory[], int num_parts) {
         printf("%7d     %-25s%11d\n", 
                inventory[i].number, inventory[i].name, inventory[i].on_hand);
 }
+
+
+int read_line(char str[], int n) {
+    int c, i = 0;
+
+    while (isspace(c = getchar()))
+        ;
+    while (c != '\n' && c != EOF) {
+        if (i < n)
+            str[i++] = c;
+        c = getchar();
+    }
+    str[i] = '\0';
+    return i;
+}
+
+void quicksort(struct part a[], int low, int high) {
+
+    int middle;
+
+    if (low >= high) return;
+    middle = split(a, low, high);
+    quicksort(a, low, middle - 1);
+    quicksort(a, middle + 1, high);
+}
+
+int split(struct part a[], int low, int high) {
+
+    struct part part_element = a[low];
+
+    for (;;) {
+        while (low < high && part_element.number <= a[high].number)
+            high--;
+        if (low >= high) break;
+        a[low++] = a[high];
+
+        while (low < high && a[low].number <= part_element.number)
+            low++;
+        if (low >= high) break;
+        a[high--] = a[low];
+    }
+    a[high] = part_element;
+    return high;
+}
+

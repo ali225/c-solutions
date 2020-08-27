@@ -9,5 +9,9 @@ struct part {
     char name[NAME_LEN+1];
     int on_hand;
 };
+int read_line(char str[], int n);
+
+void quicksort(struct part a[], int low, int high);
+int split(struct part a[], int low, int high);
 
 #endif
