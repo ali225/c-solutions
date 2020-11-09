@@ -1,3 +1,5 @@
+
+
 /* #include <stdio.h>
 #define TRUE 1
 #define FALSE 0
@@ -15,8 +17,8 @@ void main(void)
    {
     printf("value[%d] of array=%d \n",i,data[i]);
    }
-*/
-// algorthem selction sort using bubble sort
+
+     /*algorthem selction sort using bubble sort*/
 /*
      do
      {  sorted = TRUE;
@@ -42,49 +44,28 @@ void main(void)
     printf("value[%d] of array=%d \n",i,data[i]);
    }
 } */
-
 #include <stdio.h>
-#define Z 10
-#define TRUE 1
-#define FALSE 0
-void main(void) {
-  int data[Z];
-  int i, n, sorted;
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
 
-  printf("Enter size array :");
-  scanf("%d", &n);
+https://github.com/OWASP/QRLJacking
 
-  for (i = 0; i < n; i++) {
-    printf("Value[%d] of Array = ", i);
-    scanf("%d", &data[i]);
-  }
-  printf("=====================\n");
-  printf("Befor that of array ");
-  printf("=====================\n");
-
-  for (i = 0; i < n; i++) {
-    printf("Value[%d] of Array = %d\n", i, data[i]);
-  }
-
-  do {
-    sorted = TRUE;
-    for (i = 0; i < n - 1; i++) {
-      if (data[i] > data[i + 1]) {
-        int temp;
-        temp = data[i];
-        data[i] = data[i + 1];
-        data[i + 1] = temp;
-        sorted = FALSE;
-      }
+int main() 
+{
+    int a, b;	
+    scanf("%d\n%d", &a, &b);
+     char *data[] = {"zero","one","two","three","four","Five","six","seven","eight","nine","ten"};
+     int i=0;
+  	// Complete the code.
+    //  for(int i = 0; i < 10; i++) {
+        if (a == *data[i])
+        {
+         printf("%s\n",*data[i]);
+      //  }
+       
     }
 
-  } while (!sorted);
-
-  printf("=====================\n");
-  printf("After  that of array ");
-  printf("=====================\n");
-
-  for (i = 0; i < n; i++) {
-    printf("Value[%d] of Array = %d\n", i, data[i]);
-  }
+    return 0;
 }
+
