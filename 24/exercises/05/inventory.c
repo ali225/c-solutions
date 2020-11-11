@@ -12,7 +12,6 @@
 
 #include <stdio.h>
 #include <setjmp.h>
-#include "readline.h"
 
 #define NAME_LEN 25
 #define MAX_PARTS 100

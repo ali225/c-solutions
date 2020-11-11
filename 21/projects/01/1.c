@@ -9,7 +9,11 @@ struct s {
 
 int main(void)
 {
-    printf("Size of struct s: %d\n", sizeof(struct s));
+    printf("Size of struct char a : %d\n", sizeof(s1.a));
+    printf("Size of struct int  b : %d\n", sizeof(s1.b));
+    printf("Size of struct float c : %d\n", sizeof(s1.c));
+       
+    printf("Size of struct s: %d\n", sizeof(s1));
     printf("Size and offset of member a: %d -- %d\n", 
            sizeof(s1.a), offsetof(struct s, a));
     printf("Size and offset of member b: %d -- %d\n",
